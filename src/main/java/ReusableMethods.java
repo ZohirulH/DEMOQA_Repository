@@ -73,20 +73,12 @@ public class ReusableMethods {
 
     }
 
-    public void Click (String Locator){
+    public static void Click (String Locator){
         driver.findElement(By.xpath(Locator)).click();
 
 
     }
-    public static void Click (String Locator,String type){
 
-       if(type=="id") {
-           driver.findElement(By.id(Locator)).click();
-       }else if(type=="css"){
-           driver.findElement(By.cssSelector(Locator)).click();
-       }
-
-    }
 
 
 
